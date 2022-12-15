@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3">
+  <h2>Create Contact</h2>
+  <br />
+  {{ msg }}
+  <br />
+  <form class="form-group" (ngSubmit)="onSubmit()">
+    <label> Name: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      [(ngModel)]="contact.contactName"
+      placeholder="Enter Name "
+    />
+    <br />
+    <label> Email :</label>
+    <input
+      type="text"
+      class="form-control"
+      name="email"
+      [(ngModel)]="contact.contactEmail"
+      placeholder="Enter Email"
+    /><br />
+    <label> ConractNumber: </label
+    ><input
+      type="text"
+      class="form-control"
+      name="phoneNo"
+      [(ngModel)]="contact.contactNumber"
+      placeholder="Enter contact no"
+    /><br />
+
+    <button type="button" class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
